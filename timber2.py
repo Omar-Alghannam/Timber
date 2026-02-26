@@ -209,7 +209,7 @@ def log_search(query, file_path="search_stats.log"):
 def google_search_api(query):
     log_search(query)
 
-    API_KEY = "66eb55ebb8f0e9b575977e83a0b0822c0c461c5bcc9d212f2a32bbd164a8e81e"
+    API_KEY = "Your Api"
     url = f"https://serpapi.com/search.json?q={query}&api_key={API_KEY}"
     try:
         r = requests.get(url)
@@ -464,6 +464,7 @@ def selenium(query):
         return output if output else "No search results found."
     except Exception as e:
         return f"Selenium Error: {e}"
+
 
 
 
